@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Checkpoint 05</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container my-5">
+
+        <div class="my-3 py-3 px-2 bg-danger text-light rounded">
+            <h1 class="display-6  rounded">Alugue sua bike</h1>
+            <h4>Locação de bicicletas elétricas</h4>
+        </div>
+
+        <div class="table-responsive">
+            <table class="table text-center" id="dados">
+                <thead>
+                    <tr>
+                        <th>Modelo</th>
+                        <th>Preço da diária</th>
+                        <th>Valor do seguro </th>
+                        <th>Quantidade de dias locados</th>
+                        <th>Valor Locação</th>
+                    </tr>
+                </thead>
+                <tbody id="bikes">
+
+                    <tr class="bike">
+                        <td class="modelo">Caloi E-Vibe</td>
+                        <td class="diaria">32.00</td>
+                        <td class="seguro">8.00</td>
+                        <td class="dias">22</td>
+                        <td class="valor"></td>
+                    </tr>
+
+                    <tr class="bike">
+                        <td class="modelo">Caloi Vibe-Elite</td>
+                        <td class="diaria">52.00</td>
+                        <td class="seguro">16.00</td>
+                        <td class="dias">13</td>
+                        <td class="valor"></td>
+                    </tr>
+
+                    <tr class="bike">
+                        <td class="modelo">Caloi Mobylette</td>
+                        <td class="diaria">65.00</td>
+                        <td class="seguro">22.00</td>
+                        <td class="dias">11</td>
+                        <td class="valor"></td>
+                    </tr>
+
+                    <tr class="bike">
+                        <td class="modelo">Ebike Urbana</td>
+                        <td class="diaria">39.90</td>
+                        <td class="seguro">12.00</td>
+                        <td class="dias">20</td>
+                        <td class="valor"></td>
+                    </tr>
+
+                    <tr class="bike">
+                        <td class="modelo">Ebike Cross</td>
+                        <td class="diaria">25.90</td>
+                        <td class="seguro">7.00</td>
+                        <td class="dias">34</td>
+                        <td class="valor"></td>
+                    </tr>
+
+                    <tr class="bike">
+                        <td class="modelo">Ebike MSX</td>
+                        <td class="diaria">19.90</td>
+                        <td class="seguro">8.70</td>
+                        <td class="dias">45</td>
+                        <td class="valor"></td>
+                    </tr>
+
+                    <tr class="bike">
+                        <td class="modelo">FreeBike</td>
+                        <td class="diaria">22.85</td>
+                        <td class="seguro">6.40</td>
+                        <td class="dias">32</td>
+                        <td class="valor"></td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+        <div class="d-flex justify-content-end my-4">
+            <button class="btn btn-danger" id="btnDados">Gerar Dados</button>
+        </div>
+
+        <div class="table-responsive">
+            <table class="table text-center table-bordered" id="resultados">
+                <thead>
+                    <tr>
+                        <th>Menor valor de locação</th>
+                        <th>Maior valor de locação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="resultados text-center">
+                        <td id="menorValor"></td>
+                        <td id="maiorValor"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+
+    </div>
+
+    <script src="./js/app.js"></script>
+</body>
+
+
+
+</html>

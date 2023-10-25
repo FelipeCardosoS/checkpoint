@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkpoint 05</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="bg-danger p-4 mt-3 text-light">
+            <h1 class="display-4">MyBike - Sistema de Locação</h1>
+        </div>
+        <div class="my-4">
+            <h2>Reservas</h2>
+            <table id="resumo" class="table table-hover text-center">
+                <thead class="bg-dark text-light">
+                    <tr id="cabecalho">
+                        <th class="nome">Nome</th>
+                        <th class="email">Email</th>
+                        <th class="celular">Celular</th>
+                        <th class="dta-teste">Data/hora locação</th>
+                        <th class="dias">Quantidade de dias</th>
+                        <th class="modelo">Modelo locado</th>
+                    </tr>
+                </thead>
+                <tbody class="historico">
+                </tbody>
+            </table>
+        </div>
+
+        <div class="my-5 border border-1 p-4 rounded">
+            <h2 class="mt-y">Dados do Cliente</h2>
+            <form class="dados" id="dados" method="post" action="">
+                <div class="row mb-3">
+
+                    <div class="col-md-4 my-3">
+                        <label for="nome" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="nome" name="nome" placeholder="ex: Hans Solo"
+                            required autofocus>
+                    </div>
+
+                    <div class="col-md-4 my-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" name="email"
+                            placeholder="ex: seuemail@suabike.com" required>
+                    </div>
+
+                    <div class="col-md-4  my-3">
+                        <label for="celular" class="form-label">Celular</label>
+                        <input type="tel" class="form-control" id="celular" name="celular" placeholder="(99) 9999-9999 "
+                            required>
+                    </div>
+
+                    <div class="col-md-4  my-3">
+                        <label for="data-hora" class="form-label">Data e hora da locação</label>
+                        <input type="datetime-local" class="form-control" id="data-hora" name="data-hora" required>
+                    </div>
+
+                    <div class="col-md-4  my-3">
+                        <label for="dias" class="form-label">Quantidade de dias locados</label>
+                        <input type="text" class="form-control" id="dias" name="dias" placeholder="Ex: 05" required>
+                    </div>
+
+                    <div class="col-md-4  my-3">
+                        <label for="modelo" class="form-label">Selecione a bike desejada</label>
+                        <select id="modelo" class="form-select" required>
+                            <option value="Caloi E-Vibe">Caloi E-Vibe</option>
+                            <option value="Caloi Vibe-Elite">Caloi Vibe-Elite</option>
+                            <option value="Caloi Mobylette">Caloi Mobylette</option>
+                            <option value="Ebike Urbana">Ebike Urbana</option>
+                            <option value="Ebike Cross">Ebike Cross</option>
+                            <option value="Ebike MSX">Ebike MSX</option>
+                            <option value="FreeBike">EV1 Sport</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-end mt-3">
+                    <button type="submit" class="btn btn-danger">Finalizar locação</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
